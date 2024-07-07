@@ -1,29 +1,29 @@
 <?php
 /**
  * Used to set up and fix common variables and include
- * the WordPress procedural and class library.
+ * the  procedural and class library.
  *
  * Allows for some configuration in wp-config.php (see default-constants.php)
  *
- * @package WordPress
+ * @package 
  */
 
 /**
- * Stores the location of the WordPress directory of functions, classes, and core content.
+ * Stores the location of the  directory of functions, classes, and core content.
  *
  * @since 1.0.0
  */
 define( 'WPINC', 'wp-includes' );
 
 /**
- * Version information for the current WordPress release.
+ * Version information for the current  release.
  *
  * These can't be directly globalized in version.php. When updating,
  * include version.php from another installation and don't override
  * these values if already set.
  *
- * @global string $wp_version             The WordPress version string.
- * @global int    $wp_db_version          WordPress database version.
+ * @global string $wp_version             The  version string.
+ * @global int    $wp_db_version           database version.
  * @global string $tinymce_version        TinyMCE version.
  * @global string $required_php_version   The required PHP version string.
  * @global string $required_mysql_version The required MySQL version string.
@@ -65,8 +65,8 @@ wp_initial_constants();
 // Register the shutdown handler for fatal errors as soon as possible.
 wp_register_fatal_error_handler();
 
-// WordPress calculates offsets from UTC.
-// phpcs:ignore WordPress.DateTime.RestrictedFunctions.timezone_change_date_default_timezone_set
+//  calculates offsets from UTC.
+// phpcs:ignore .DateTime.RestrictedFunctions.timezone_change_date_default_timezone_set
 date_default_timezone_set( 'UTC' );
 
 // Standardize $_SERVER variables across setups.
@@ -105,7 +105,7 @@ if ( WP_CACHE && apply_filters( 'enable_loading_advanced_cache_dropin', true ) &
 // Define WP_LANG_DIR if not set.
 wp_set_lang_dir();
 
-// Load early WordPress files.
+// Load early  files.
 require ABSPATH . WPINC . '/class-wp-list-util.php';
 require ABSPATH . WPINC . '/formatting.php';
 require ABSPATH . WPINC . '/meta.php';
@@ -124,7 +124,7 @@ require ABSPATH . WPINC . '/l10n/class-wp-translation-file-php.php';
 /**
  * @since 0.71
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb  database abstraction object.
  */
 global $wpdb;
 // Include the wpdb class and, if present, a db.php database drop-in.
@@ -140,7 +140,7 @@ $GLOBALS['table_prefix'] = $table_prefix;
 // Set the database table prefix and the format specifiers for database table columns.
 wp_set_wpdb_vars();
 
-// Start the WordPress object cache, or an external object cache if the drop-in is present.
+// Start the  object cache, or an external object cache if the drop-in is present.
 wp_start_object_cache();
 
 // Attach the default filters.
@@ -158,7 +158,7 @@ if ( is_multisite() ) {
 
 register_shutdown_function( 'shutdown_action_hook' );
 
-// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+// Stop most of  from being loaded if SHORTINIT is enabled.
 if ( SHORTINIT ) {
 	return false;
 }
@@ -169,10 +169,10 @@ require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
 require_once ABSPATH . WPINC . '/class-wp-locale.php';
 require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
 
-// Run the installer if WordPress is not installed.
+// Run the installer if  is not installed.
 wp_not_installed();
 
-// Load most of WordPress.
+// Load most of .
 require ABSPATH . WPINC . '/class-wp-walker.php';
 require ABSPATH . WPINC . '/class-wp-ajax-response.php';
 require ABSPATH . WPINC . '/capabilities.php';
@@ -402,18 +402,18 @@ add_action( 'after_setup_theme', array( wp_interactivity(), 'add_hooks' ) );
 /**
  * @since 3.3.0
  *
- * @global WP_Embed $wp_embed WordPress Embed object.
+ * @global WP_Embed $wp_embed  Embed object.
  */
 $GLOBALS['wp_embed'] = new WP_Embed();
 
 /**
- * WordPress Textdomain Registry object.
+ *  Textdomain Registry object.
  *
  * Used to support just-in-time translations for manually loaded text domains.
  *
  * @since 6.1.0
  *
- * @global WP_Textdomain_Registry $wp_textdomain_registry WordPress Textdomain Registry.
+ * @global WP_Textdomain_Registry $wp_textdomain_registry  Textdomain Registry.
  */
 $GLOBALS['wp_textdomain_registry'] = new WP_Textdomain_Registry();
 $GLOBALS['wp_textdomain_registry']->init();
@@ -563,44 +563,44 @@ wp_magic_quotes();
 do_action( 'sanitize_comment_cookies' );
 
 /**
- * WordPress Query object
+ *  Query object
  *
  * @since 2.0.0
  *
- * @global WP_Query $wp_the_query WordPress Query object.
+ * @global WP_Query $wp_the_query  Query object.
  */
 $GLOBALS['wp_the_query'] = new WP_Query();
 
 /**
  * Holds the reference to {@see $wp_the_query}.
- * Use this global for WordPress queries
+ * Use this global for  queries
  *
  * @since 1.5.0
  *
- * @global WP_Query $wp_query WordPress Query object.
+ * @global WP_Query $wp_query  Query object.
  */
 $GLOBALS['wp_query'] = $GLOBALS['wp_the_query'];
 
 /**
- * Holds the WordPress Rewrite object for creating pretty URLs
+ * Holds the  Rewrite object for creating pretty URLs
  *
  * @since 1.5.0
  *
- * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+ * @global WP_Rewrite $wp_rewrite  rewrite component.
  */
 $GLOBALS['wp_rewrite'] = new WP_Rewrite();
 
 /**
- * WordPress Object
+ *  Object
  *
  * @since 2.0.0
  *
- * @global WP $wp Current WordPress environment instance.
+ * @global WP $wp Current  environment instance.
  */
 $GLOBALS['wp'] = new WP();
 
 /**
- * WordPress Widget Factory Object
+ *  Widget Factory Object
  *
  * @since 2.8.0
  *
@@ -609,11 +609,11 @@ $GLOBALS['wp'] = new WP();
 $GLOBALS['wp_widget_factory'] = new WP_Widget_Factory();
 
 /**
- * WordPress User Roles
+ *  User Roles
  *
  * @since 2.0.0
  *
- * @global WP_Roles $wp_roles WordPress role management object.
+ * @global WP_Roles $wp_roles  role management object.
  */
 $GLOBALS['wp_roles'] = new WP_Roles();
 
@@ -639,20 +639,20 @@ if ( ( 0 === validate_file( $locale ) ) && is_readable( $locale_file ) ) {
 unset( $locale_file );
 
 /**
- * WordPress Locale object for loading locale domain date and various strings.
+ *  Locale object for loading locale domain date and various strings.
  *
  * @since 2.1.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale  date and time locale object.
  */
 $GLOBALS['wp_locale'] = new WP_Locale();
 
 /**
- * WordPress Locale Switcher object for switching locales.
+ *  Locale Switcher object for switching locales.
  *
  * @since 4.7.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher  locale switcher object.
  */
 $GLOBALS['wp_locale_switcher'] = new WP_Locale_Switcher();
 $GLOBALS['wp_locale_switcher']->init();
@@ -682,7 +682,7 @@ WP_Site_Health::get_instance();
 $GLOBALS['wp']->init();
 
 /**
- * Fires after WordPress has finished loading but before any headers are sent.
+ * Fires after  has finished loading but before any headers are sent.
  *
  * Most of WP is loaded at this stage, and the user is authenticated. WP continues
  * to load on the {@see 'init'} hook that follows (e.g. widgets), and many plugins instantiate
@@ -710,7 +710,7 @@ if ( is_multisite() ) {
  * Ajax requests should use wp-admin/admin-ajax.php. admin-ajax.php can handle requests for
  * users not logged in.
  *
- * @link https://codex.wordpress.org/AJAX_in_Plugins
+ * @link https://codex..org/AJAX_in_Plugins
  *
  * @since 3.0.0
  */
