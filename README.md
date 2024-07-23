@@ -4,45 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectPilot README</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        h2 {
-            color: #34495e;
-        }
-        p {
-            color: #7f8c8d;
-        }
-        ul, ol {
-            margin: 20px 0;
-            padding: 0 20px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .banner {
-            width: 100%;
-            height: auto;
-        }
-        .screenshot, .photo {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 10px 0;
-        }
-        .author {
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
 
