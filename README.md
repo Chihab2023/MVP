@@ -1,11 +1,11 @@
 <h1>ProjectPilot</h1>
 
-<p><img class="banner" src="" alt="ProjectPilot Logo" /></p>
+<p><img class="banner" src="P (1).png" alt="ProjectPilot Logo" /></p>
 
 <h2>Introduction</h2>
 <p>
     <strong>ProjectPilot</strong> is designed to revolutionize the way teams manage projects by offering an integrated, user-friendly platform that enhances collaboration, streamlines task management, and provides real-time updates. Our goal is to simplify project management and help teams achieve their goals more efficiently.
-</p>
+</p
 <ul>
     <li><strong>Deployed Site</strong>: <a href="link-to-deployed-site">Link to deployed site</a></li>
     <li><strong>Final Project Blog Article</strong>: <a href="link-to-blog-article">Link to blog article</a></li>
