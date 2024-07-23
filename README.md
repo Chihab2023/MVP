@@ -48,7 +48,7 @@
 
 <h1>ProjectPilot</h1>
 
-<p><img class="banner" src="link-to-banner-image" alt="ProjectPilot Logo" /></p>
+<p><img class="banner" src="" alt="ProjectPilot Logo" /></p>
 
 <h2>Introduction</h2>
 <p>
@@ -63,8 +63,8 @@
 <h2>Installation</h2>
 <pre>
 <code>
-git clone https://github.com/yourusername/ProjectPilot.git
-cd ProjectPilot
+git clone https://github.com/Chihab2023/PROJECTPILOT.git
+cd PROJECTPILOT
 npm install
 npm start
 </code>
@@ -72,7 +72,7 @@ npm start
 
 <h2>Usage</h2>
 <ol>
-    <li>Open your browser and navigate to <code>http://localhost:3000</code>.</li>
+    <li>Open your browser and navigate to <code>https://projectpilot.wuaze.com/</code>.</li>
     <li>Register or log in to your account.</li>
     <li>Create a new project or join an existing one.</li>
     <li>Use the task management tools to assign tasks, set deadlines, and track progress.</li>
@@ -89,27 +89,19 @@ npm start
     <li>Open a pull request.</li>
 </ol>
 
-<h2>Related Projects</h2>
-<ul>
-    <li><a href="https://github.com/deepfakes">DeepFakes</a></li>
-    <li><a href="https://github.com/wikigraph">WikiGraph</a></li>
-    <li><a href="https://github.com/jobodyssey">Job Odyssey</a></li>
-    <li><a href="https://github.com/ideadog">ideadog</a></li>
-</ul>
 
 <h2>Licensing</h2>
 <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
 <h2>Screenshot</h2>
-<p><img class="screenshot" src="link-to-screenshot" alt="Screenshot of ProjectPilot" /></p>
+<p><img class="screenshot" src="P (1).png" alt="Screenshot of ProjectPilot" /></p>
 
 <h2>Video and Photos</h2>
-<p>For a more immersive experience, check out our <a href="link-to-video">landing page video</a> which showcases the key features of ProjectPilot.</p>
+<p>For a more immersive experience, check out our <a href="https://youtu.be/MSaiSX1lFKo?si=0PDEbgeFI0Grst0H">landing page video</a> which showcases the key features of ProjectPilot.</p>
 
 <p>Here are some photos demonstrating our application's interface and functionality:</p>
-<p><img class="photo" src="link-to-photo1" alt="Task management interface" /></p>
-<p><img class="photo" src="link-to-photo2" alt="Real-time collaboration tools" /></p>
-<p><img class="photo" src="link-to-photo3" alt="Project overview dashboard" /></p>
+<p><img class="photo" src="2.jpg" alt="Task management interface" /></p>
+<p><img class="photo" src="R1.jpg" alt="Real-time collaboration tools" /></p>
 
 <h2>Clean Up Those Commit Messages</h2>
 <p>We reviewed all commit messages to ensure they are clear and informative. You can edit commit messages on GitHub by following these steps:</p>
@@ -133,10 +125,10 @@ npm start
     <h3>Nouhaila Ait Hammad</h3>
     <p>Nouhaila is a passionate software engineer focused on frontend development and project management. She thrives on creating seamless user experiences and solving technical challenges.</p>
     <ul>
-        <li><a href="link-to-github-nouhaila">GitHub</a></li>
-        <li><a href="link-to-deployed-project-nouhaila">Deployed Project</a></li>
-        <li><a href="link-to-landing-page-nouhaila">Project Landing Page</a></li>
-        <li><a href="link-to-linkedin-nouhaila">LinkedIn</a></li>
+        <li><a href="https://github.com/n1o2h">GitHub</a></li>
+        <li><a href="https://github.com/Chihab2023/MVP.git">Deployed Project</a></li>
+        <li><a href="https://youtu.be/MSaiSX1lFKo?si=0PDEbgeFI0Grst0H">Project Landing Page</a></li>
+        <li><a href="https://www.linkedin.com/in/nouhaila-ait-hammad-400aa4284/">LinkedIn</a></li>
     </ul>
 </div>
 
@@ -144,10 +136,10 @@ npm start
     <h3>Sabri Chihab Eddine</h3>
     <p>Sabri is an experienced backend developer with a keen interest in scalable solutions and efficient code. He has a strong background in API development and database management.</p>
     <ul>
-        <li><a href="link-to-github-sabri">GitHub</a></li>
-        <li><a href="link-to-deployed-project-sabri">Deployed Project</a></li>
-        <li><a href="link-to-landing-page-sabri">Project Landing Page</a></li>
-        <li><a href="link-to-linkedin-sabri">LinkedIn</a></li>
+        <li><a href="https://github.com/Chihab2023">GitHub</a></li>
+        <li><a href="https://github.com/Chihab2023/MVP.git">Deployed Project</a></li>
+        <li><a href="https://youtu.be/MSaiSX1lFKo?si=0PDEbgeFI0Grst0H">Project Landing Page</a></li>
+        <li><a href="https://www.linkedin.com/in/chihab-sabri-75946b4a/">LinkedIn</a></li>
     </ul>
 </div>
 
